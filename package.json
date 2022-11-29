@@ -1,0 +1,25 @@
+{
+  "name": "playwright_barebones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "headedtest": "npx playwright test --headed",
+    "test": "npx playwright test",
+    "runsingle": "npx playwright test specs/example2.spec.js",
+    "runset":"npx playwright test specs/todo-page/ specs/landing-page",
+    "runsimilarfiles":"npx playwright test my-spec my-spec-2",
+    "runtestwithtitle":"npx playwright test -g 'add a todo item'",
+    "runallbrowser":"npx playwright test --browser=all",
+    "disableparellization":"npx playwright test --workers=1",
+    "debug":"npx playwright test --debug",
+    "updatesnap": "npx playwright test --update-snapshots"
+  },
+  "keywords": [],
+  "author": "Newas Azad",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1",
+    "playwright": "^1.28.1"
+  }
+}
